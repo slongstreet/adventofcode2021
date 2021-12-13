@@ -22,7 +22,7 @@
             Console.WriteLine("[PART1] Fish population: {0}", fishStatus.Count);
 
             // To avoid managing a list of billions of integers for part 2, let's just sum up how
-            // many new fish are born each day!
+            // many fish should be in each status every day!
             long[] fishCounter = new long[MAXAGE+1];  // all fish are 0-8 days old.
 
             // We already have 80 days simulated, so let's reuse the data!
@@ -65,8 +65,6 @@
                 {
                     fishStatus.Add(8);
                 }
-
-                Console.WriteLine("{0}:{1}", i, fishStatus.Count);
             }
         }
     }
